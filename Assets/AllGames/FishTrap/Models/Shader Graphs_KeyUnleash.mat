@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_KeyUnleash
+  m_Shader: {fileID: -6465566751694194690, guid: 0c942c2fa567380408f3c32eaa259e7b,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Key_ColorMap:
+        m_Texture: {fileID: 2800000, guid: fb1ac5d9abeaece478443b02c4b80744, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Key_MetalicMap:
+        m_Texture: {fileID: 2800000, guid: fb1ac5d9abeaece478443b02c4b80744, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Key_NormalMap:
+        m_Texture: {fileID: 2800000, guid: fb1ac5d9abeaece478443b02c4b80744, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Key_RoughnessMap:
+        m_Texture: {fileID: 2800000, guid: fb1ac5d9abeaece478443b02c4b80744, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Key_SpecularMap:
+        m_Texture: {fileID: 2800000, guid: fb1ac5d9abeaece478443b02c4b80744, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _DesolveAmount: 0
+    - _DesolveThresold: 0.2
+    - _FresnelEdge: 0.02
+    - _NoiseFactor: 50
+    - _VoronoiFactorAngle: 50
+    - _VoronoiFactorCell: 50
+    m_Colors:
+    - _FresnelColor: {r: 4, g: 1.223529, b: 0, a: 0}

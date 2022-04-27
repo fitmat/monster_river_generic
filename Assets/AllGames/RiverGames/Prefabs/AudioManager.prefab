@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4323924735186633406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4323924735186633400}
+  - component: {fileID: 4323924735186633401}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4323924735186633400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4323924735186633406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4323924735186633401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4323924735186633406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffbe16cedf65a2c42abf511d5a62e80c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Raygun
+    audioClip: {fileID: 8300000, guid: 5752bcbc37b3cb4448f5ea2854f25740, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: Shotgun
+    audioClip: {fileID: 8300000, guid: 5752bcbc37b3cb4448f5ea2854f25740, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: Ambient
+    audioClip: {fileID: 8300000, guid: 0e0e64cf3c25b10458edafb537e226e2, type: 3}
+    audioSource: {fileID: 0}
+    loop: 1
+    volume: 0.4
+    pitch: 1
+  - name: MonsterGrowl1
+    audioClip: {fileID: 8300000, guid: 60541cc9c583cf04c818682b8a511071, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: MonsterGrowl2
+    audioClip: {fileID: 8300000, guid: 814acba996f7fa84e96477f6ebac176c, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: MonsterGrowl3
+    audioClip: {fileID: 8300000, guid: da83902faa433c645a57b095596eb5e6, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: FireBall
+    audioClip: {fileID: 8300000, guid: 4049cfa50d3c6b64994a4b9c2e6c7352, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: RaftDamage1
+    audioClip: {fileID: 8300000, guid: 4c86d408ccfb49c448ed95b364dc5535, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: RaftDamage2
+    audioClip: {fileID: 8300000, guid: 3df13ba32de796a449d6bf2e36f54df0, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: RaftDamage3
+    audioClip: {fileID: 8300000, guid: df18456627dab6c42a765028a7e44c40, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: Lose
+    audioClip: {fileID: 8300000, guid: 2a0ff8184a922a540846515bad2cc1ed, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: Start
+    audioClip: {fileID: 8300000, guid: 1812c32867ac5584fb6ab8b3f4bfd28e, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: End
+    audioClip: {fileID: 8300000, guid: b7b9d85b5ec3be347a644cab2b088065, type: 3}
+    audioSource: {fileID: 0}
+    loop: 0
+    volume: 1
+    pitch: 1
+  - name: Soundtrack
+    audioClip: {fileID: 8300000, guid: b57cd542598646a4b8a8375077b45cb5, type: 3}
+    audioSource: {fileID: 0}
+    loop: 1
+    volume: 1
+    pitch: 1

@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9017818038243054006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1390604529693022886}
+  - component: {fileID: 7448476157131209509}
+  - component: {fileID: 1666968881309161717}
+  m_Layer: 0
+  m_Name: TerrainManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1390604529693022886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017818038243054006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7448476157131209509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017818038243054006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf0765ab78301704fb156b5b531c8b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - tag: Terrain0
+    prefab: {fileID: 7809587163268988333, guid: 87ab9dc4148d1b748a295a67a46a8d63,
+      type: 3}
+    size: 4
+  - tag: Terrain1
+    prefab: {fileID: 6893407491173877792, guid: 03f6e33b305d2d64bb58b04aa6f5e65a,
+      type: 3}
+    size: 4
+  - tag: Terrain2
+    prefab: {fileID: 6975444687992810304, guid: 61e9729033aee1440bc00f3c29bedfda,
+      type: 3}
+    size: 4
+  - tag: Terrain3
+    prefab: {fileID: 8435556162529141409, guid: a597f99a93b49ee4d98864980562b0d7,
+      type: 3}
+    size: 4
+  - tag: Terrain4
+    prefab: {fileID: 5203666544722874888, guid: f009a19afe64c764985160c47469f52f,
+      type: 3}
+    size: 4
+  - tag: Terrain5
+    prefab: {fileID: 7264993981670943443, guid: 3364fb68ddf5aba4d80e459a860669ed,
+      type: 3}
+    size: 4
+  - tag: Terrain6
+    prefab: {fileID: 5592176578469250504, guid: eb6cb40ecb603f049a2babaddb9949ee,
+      type: 3}
+    size: 4
+  - tag: Terrain7
+    prefab: {fileID: 7696553316161656352, guid: 1c2533f9d38e248498e8ea87d6720426,
+      type: 3}
+    size: 4
+  - tag: Terrain8
+    prefab: {fileID: 3988524406853554018, guid: 29c56146ae0932d4b8a5b0bc1d41c529,
+      type: 3}
+    size: 4
+  - tag: Terrain9
+    prefab: {fileID: 3336928303371192135, guid: a27ffcfe212675b40966e6809469f7b6,
+      type: 3}
+    size: 4
+--- !u!114 &1666968881309161717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017818038243054006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b542a2f8b6cb16345b0a57425fc455fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTerrain: {fileID: 0}
+  backTerrain: {fileID: 0}
+  frontTerrain: {fileID: 0}
+  noOfTerrains: 9
+  terrainLength: 180
+  terrainsPassed: 0
