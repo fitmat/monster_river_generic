@@ -32,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SurfaceDistortion:
-        m_Texture: {fileID: 2800000, guid: 1df0d2d95a72e2e4d9feeb903433d5f2, type: 3}
+        m_Texture: {fileID: 2800000, guid: fb6566c21f717904f83743a5a76dd0b0, type: 3}
         m_Scale: {x: 12, y: 12}
         m_Offset: {x: 0, y: 0}
     - _SurfaceNoise:
@@ -53,3 +53,4 @@ Material:
     - _FoamColor: {r: 1, g: 1, b: 1, a: 0.19215687}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SurfaceNoiseScroll: {r: 0.07, g: -0.06, b: 0, a: 0}
+  m_BuildTextureStacks: []

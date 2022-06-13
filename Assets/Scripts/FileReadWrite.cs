@@ -27,7 +27,7 @@ namespace yipli.Windows
             "Joyful Jumps"
         };
 
-        static RegistryKey rk = Registry.CurrentUser;
+        //static RegistryKey rk = Registry.CurrentUser;
 
         public static string YipliAppDownloadUrl { get => yipliAppDownloadUrl; set => yipliAppDownloadUrl = value; }
         public static bool LogOutFlag { get => logOutFlag; set => logOutFlag = value; }
@@ -193,12 +193,12 @@ namespace yipli.Windows
         {
             string installPath = null;
             
-            RegistryKey subKey = rk.OpenSubKey(gameName);
+            //RegistryKey subKey = rk.OpenSubKey(gameName);
             
             try
             {
-                installPath = subKey.GetValue("InstallPath").ToString();
-                UnityEngine.Debug.LogError("sub key : " + subKey.GetValue("InstallPath"));
+                //installPath = subKey.GetValue("InstallPath").ToString();
+                //UnityEngine.Debug.LogError("sub key : " + subKey.GetValue("InstallPath"));
             }
             catch (Exception e)
             {
@@ -229,11 +229,11 @@ namespace yipli.Windows
         {
             string exePath = null;
 
-            RegistryKey subKey = rk.OpenSubKey(gameID);
+            //RegistryKey subKey = rk.OpenSubKey(gameID);
 
             try
             {
-                exePath = subKey.GetValue("MatDriverCheck").ToString();
+                //exePath = subKey.GetValue("MatDriverCheck").ToString();
                 UnityEngine.Debug.LogError("Exepath : " + exePath);
             }
             catch (Exception e)

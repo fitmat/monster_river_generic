@@ -18,7 +18,7 @@ namespace Foliage
         {
             // Read the jump input in Update so button presses aren't missed.
 #if CROSS_PLATFORM_INPUT
-        if (CrossPlatformInput.GetButtonDown("Jump")) jump = true;
+        //if (CrossPlatformInput.GetButtonDown("Jump")) jump = true;
 #else
             if (Input.GetButtonDown("Jump")) jump = true;
 #endif
@@ -29,13 +29,13 @@ namespace Foliage
         {
             // Read the inputs.
 #if CROSS_PLATFORM_INPUT
-		float h = CrossPlatformInput.GetAxis("Horizontal");
+		//float h = CrossPlatformInput.GetAxis("Horizontal");
 #else
             float h = Input.GetAxis("Horizontal");
 #endif
 
             // Pass all parameters to the character control script.
-            character.Move(h, jump);
+            //character.Move(h, jump);
 
             // Reset the jump input once it has been used.
             jump = false;

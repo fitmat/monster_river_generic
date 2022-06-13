@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MaintenancePanel : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI message;
-    //[SerializeField] TextMeshProUGUI title;
+    [SerializeField] TextMeshProUGUI title;
 
     [SerializeField] GameObject maintenancePanel;
 
