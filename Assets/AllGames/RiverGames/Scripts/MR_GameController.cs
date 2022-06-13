@@ -20,6 +20,7 @@ public class MR_GameController : MonoBehaviour
 
         Screen.SetResolution(1280, 720, true);
         Time.timeScale = 0;
+        Application.targetFrameRate = 30;
     }
 
     public int gameTime;
@@ -37,6 +38,8 @@ public class MR_GameController : MonoBehaviour
     [SerializeField] private Slider progressBar;
 
     // Start is called before the first frame update
+   
+    
     void Start()
     {
         isSinglePlayer = false;
@@ -57,7 +60,7 @@ public class MR_GameController : MonoBehaviour
     private void Update()
     {
         currentX = gameplayObject.transform.localPosition.x;
-        progressBar.value = (float)(currentX / endX);
+        //progressBar.value = (float)(currentX / endX);
     }
 
     public void StartGame()
