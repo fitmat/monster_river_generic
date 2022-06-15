@@ -7,6 +7,7 @@ using UnityEngine.AI;
 public class TR_RangedMonsterController : MonoBehaviour
 {
     private enum State { floating, idle, attacking, dead, waiting };
+    [SerializeField]
     private State currentState;
 
     [SerializeField] private float speed;
@@ -65,6 +66,8 @@ public class TR_RangedMonsterController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log($"Touched {other.name}");
+
         if (other.gameObject.tag == "RangeRadius" && currentState == State.floating)
         {
             currentState = State.attacking;
@@ -95,6 +98,7 @@ public class TR_RangedMonsterController : MonoBehaviour
     {
         if (other.gameObject.tag == "RangeRadius" && currentState == State.attacking)
         {
+            currentState = State.floating;
             StartCoroutine(FloatToTarget());
         }
         if (other.gameObject.tag == "EnemyDespawn")
@@ -140,10 +144,10 @@ public class TR_RangedMonsterController : MonoBehaviour
     {
         if (currentState == State.floating)
         {
-            currentState = State.floating;
             transform.LookAt(selectedTarget.transform);
             gameObject.transform.Translate(Vector3.forward * Time.deltaTime * speed);
-            yield return null;
+            yield return new WaitForFixedUpdate();
+            StopCoroutine(FloatToTarget());
             StartCoroutine(FloatToTarget());
         }
     }

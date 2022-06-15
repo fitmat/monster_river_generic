@@ -6,6 +6,7 @@ using UnityEngine;
 public class TR_MeeleMonsterController : MonoBehaviour
 {
     private enum State { swimming, attacking, dead, waiting };
+    [SerializeField]
     private State currentState;
 
     [SerializeField] private float speed;
@@ -141,6 +142,7 @@ public class TR_MeeleMonsterController : MonoBehaviour
             transform.LookAt(selectedTarget.transform);
             gameObject.transform.Translate(Vector3.forward * Time.deltaTime * speed);
             yield return null;
+            StopCoroutine(SwimToRaft());
             StartCoroutine(SwimToRaft());
         }
     }
@@ -169,6 +171,7 @@ public class TR_MeeleMonsterController : MonoBehaviour
         MR_AudioManager.instance.PlayAudio("MonsterDie");
         animator.SetTrigger("Die");
         currentState = State.dead;
+        TR_EnemySpawner.instance.enemySpawned.Remove(gameObject);
         TR_UIController.instance.activeEnemies.Remove(gameObject);
         StartCoroutine(DelayDespawn());
     }
